@@ -10,15 +10,17 @@ public class ListExample {
 
 	public static void main(String[] args) {
 		
-		List<String> words = List.of("Apple","Cat","Bat");	// immutable
-		List<Integer> numbers = List.of(10,15,20);
+		//List<String> words = List.of("Apple","Cat","Bat");	// immutable
+		//List<Integer> numbers = List.of(10,15,20);
 		
-		List<String> wordsAL = new ArrayList<String>(words);	// mutable
-		List<String> wordsLL = new LinkedList<String>(words);	// Assignment  LinkedListEx.java
-		List<String> wordsVector = new Vector<String>(words);	// Assignment	VectorEx.java
+		List<String> wordsAL = new ArrayList<String>();	// mutable
+		List<String> wordsLL = new LinkedList<String>();	// Assignment  LinkedListEx.java
+		List<String> wordsVector = new Vector<String>();	// Assignment	VectorEx.java
 		
 		System.out.println("Initital Value : "+wordsAL);
-		
+		wordsAL.add("Apple");
+		wordsAL.add("Cat");
+		wordsAL.add("Bat");
 		wordsAL.add("Elephant");
 		wordsAL.add("Apple");
 		wordsAL.add(1,"Orange");
