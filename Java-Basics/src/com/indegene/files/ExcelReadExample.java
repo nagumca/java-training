@@ -26,7 +26,7 @@ public class ExcelReadExample {
 						case Cell.CELL_TYPE_STRING:
 							System.out.print(cell.getStringCellValue()+"\t\t");
 							break;
-						case Cell.CELL_TYPE_NUMERIC:
+						case Cell.CELL_TYPE_NUMERIC: 
 							System.out.print((int)cell.getNumericCellValue()+"\t\t");
 							break;
 					}
